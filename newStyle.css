@@ -1,0 +1,80 @@
+#jumbotron{
+margin-top: 25px;
+background-color: #5A6650;
+color:#9FCC2E;
+font-family:'Press Start 2P', cursive;
+}
+#allContent{
+    margin-bottom: 50px;
+
+}
+body{
+    background-color: black;
+}
+.main::first-letter{
+font-size: 100px;
+font-family: 'Press Start 2P',serif;
+font-style: italic;
+float: left;
+line-height: 1.2;
+margin-right: 14px;
+
+
+}
+.main{
+    margin-left: -190px;
+    justify-content: left;
+    font-size: large;
+    font-family:'Lobster',cursive;
+    color:#7D933F;
+    
+}
+#highScoreCard{
+    color: #9FCC2E;
+    float: right;
+    margin-right: -175px;
+    width: 25rem;
+    height: 20rem;
+}
+#highScoreCardHeader{
+    font-family: 'Architects Daughter', cursive;
+    font-size: larger;
+    text-align: center;
+    text-emphasis: bold;
+    background-color: #072017;
+}
+#highScoreCardBody{
+    background-color: #425C43;
+}
+#something{
+    text-align: center;
+    justify-self: center;
+    margin-left: 50px;
+    font-family: 'Roboto',cursive;
+    font-size: large;
+    font-style: italic;
+}
+#quiz-container{
+    display: none;
+    padding: 20px;
+}
+#quizCard{
+    color: #9FCC2E;
+   height: 100px;
+   
+    margin-bottom: 50px;
+
+}
+#quizCardHeader{
+    font-family: 'Architects Daughter', cursive;
+    font-size: larger;
+    text-align: center;
+    text-emphasis: bold;
+    background-color: #474B56;
+}
+#quizCardBody{
+    background-color:#4E525F;
+}
+#timer{
+   
+}
