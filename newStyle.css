@@ -18,8 +18,6 @@ font-style: italic;
 float: left;
 line-height: 1.2;
 margin-right: 14px;
-
-
 }
 .main{
     margin-left: -190px;
@@ -27,14 +25,9 @@ margin-right: 14px;
     font-size: large;
     font-family:'Lobster',cursive;
     color:#7D933F;
-    
 }
 #highScoreCard{
     color: #9FCC2E;
-    float: right;
-    margin-right: -175px;
-    width: 25rem;
-    height: 20rem;
 }
 #highScoreCardHeader{
     font-family: 'Architects Daughter', cursive;
@@ -45,6 +38,7 @@ margin-right: 14px;
 }
 #highScoreCardBody{
     background-color: #425C43;
+   justify-items: center;
 }
 #something{
     text-align: center;
@@ -60,10 +54,6 @@ margin-right: 14px;
 }
 #quizCard{
     color: #9FCC2E;
-   height: 100px;
-   
-    margin-bottom: 50px;
-
 }
 #quizCardHeader{
     font-family: 'Architects Daughter', cursive;
@@ -71,10 +61,45 @@ margin-right: 14px;
     text-align: center;
     text-emphasis: bold;
     background-color: #474B56;
+    color: whitesmoke;
 }
 #quizCardBody{
     background-color:#4E525F;
 }
-#timer{
-   
+.timer{
+color: whitesmoke;
+font-size: 50px;
+}
+#timeStart{
+    margin-left: 10px;
+}
+
+    
+}
+@media (max-width:600px){
+body{
+  
+}
+
+#jumbotron{
+    justify-self: center;
+    }
+}
+.main{
+    justify-content: center;
+    justify-self: center;
+    margin: auto;
+}
+#something{
+    justify-self: center;
+    margin: auto;
+    margin-bottom: 20px;
+}
+#highScoreCard{
+    margin-top: 150px;
+    max-width: 300px;
+    
+    margin: auto;
+    justify-self: center;
+    justify-items: center;
 }

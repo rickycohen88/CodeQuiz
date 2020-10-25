@@ -28,46 +28,64 @@
           <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
     </div>
    </div> 
-   <div class="container" id="quiz-container">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="quizcard">
-            <div class="card-header" id="quizCardHeader">
-              Question<div class="timer"><button type="button" class="btn btn-success " id="timer">Start</button></div>
-              
-              
-            </div>
-            <div class="card-body" id="quizCardBody">
-              <button type="button" class="btn btn-light btn-lg btn-block">answer 1</button><br>
-              <button type="button" class="btn btn-light btn-lg btn-block">answer 2</button><br>
-              <button type="button" class="btn btn-light btn-lg btn-block">answer 3</button><br>
-              <button type="button" class="btn btn-light btn-lg btn-block">answer 4</button><br>
-            </div>
-            </div>
-          </div>
-      </div>
-     </div>
+   
 
   <div class="container">
     <div class="row">
-      <div class="col-md-4">
-        <main class="main">Welcome to the Cod3 Quiz! Here you can test your knowledge of Html,Css, and Javascript.</main>
+      <div class="col-lg-4" id="main">
+        <main class="main">Welcome to the Cod3 Quiz! Here you can test your knowledge of Html,Css, and Javascript.
+          When your ready to begin click the button"Take Quiz" you will be presented with a timer and a start button, underneath that you will find a question. 
+          Choose one of the four answers provided(which ever you deam to be correct). 
+          You will then be provided with a new question. you have 1 minuet to complete as many as you can.
+          Good Luck!
+        </main>
       </div>
       <div class="col-md-4">
         <button class="btn btn-success btn-block"id="something">
           <span class="fa fa-ok"></span> Take Quiz</button>
       </div>
-        
+<div class="container" id="quiz-container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="quizcard">
+            <div class="card-header" id="quizCardHeader">
+              <div class="timer"><div id="timer">60</div><button type="button" class="btn btn-success " id="timeStart">Start</button></div>
+              Question
+              
+            </div>
+            <div class="card-body" id="quizCardBody">
+              <button type="button" class="btn btn-light btn-lg btn-block" id="ans1">answer 1</button><br>
+              <button type="button" class="btn btn-light btn-lg btn-block" id="ans2">answer 2</button><br>
+              <button type="button" class="btn btn-light btn-lg btn-block" id="ans3">answer 3</button><br>
+              <button type="button" class="btn btn-light btn-lg btn-block" id="ans4">answer 4</button><br>
+            </div>
+            </div>
+      </div>
+    </div>
+</div>
         <!--high scores card floated right-->
-        <div class="col-md-4">
+        <div class="col-lg-4">
         <div class="card" id="highScoreCard">
           <div class="card-header" id="highScoreCardHeader">High Scores</div>
           <div class="card-body" id="highScoreCardBody">
-            <h5 class="card-title">Card title</h5>
-            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="card-link">Card link</a>
-            <a href="#" class="card-link">Another link</a>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Name</th>
+                  <th scope="col">Score</th>
+                  <th scope="col">Time Left</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>name</td>
+                  <td>score</td>
+                  <td>time</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
           </div>
         </div>
