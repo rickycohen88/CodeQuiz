@@ -24,6 +24,7 @@ let sfxlose = new Audio("sounds/yeah-thats-nice.mp3");
 let sfxwin = new Audio("sounds/dodgson.mp3");
 let sfxwin2 = new Audio("sounds/see-nobody-cares.mp3");
 
+//take quiz button open and closes quiz div
 $("#something").on("click",function (){
    let x = document.getElementById("quiz-container");
    if(x.style.display === "none"){
@@ -43,6 +44,7 @@ $("#something").on("click",function (){
        clearInterval(clock);
        asked.innerHTML = "";
        currentQuestionIndex = 0;
+       displayHS();
 
    }
 })
@@ -107,7 +109,7 @@ function setQandA() {
       score--;
       }
       else{
-        sfxwrong2.play();
+        sfxWrong2.play();
        answeredWrong = 0;
        score--;
       }
@@ -182,7 +184,7 @@ function saveHighscore() {
   }
 }
 
-function printHighscores() {
+function displayHS() {
   // either get scores from localstorage or set to empty array
   var highscores = JSON.parse(window.localStorage.getItem("highscores")) || [];
 
@@ -210,7 +212,7 @@ function clearHighscores() {
 document.getElementById("clear").onclick = clearHighscores;
 
 // run function when page loads
-printHighscores();
+displayHS();
 
 
 
@@ -235,43 +237,43 @@ var questions = [
       answer: "Sponge Bob"
     },
     {
-      question: "Commonly used data types DO NOT include:",
-      choices: ["strings", "booleans", "alerts", "numbers"],
-      answer: "alerts"
+      question: "the name of the computer systems architec from jarassic park?",
+      choices: ["ned", "mike", "john", "dodgson"],
+      answer: "ned"
     },
     {
-      question: "Commonly used data types DO NOT include:",
-      choices: ["strings", "booleans", "alerts", "numbers"],
-      answer: "alerts"
+      question: "theorized to be a decendant of dinosaurs",
+      choices: ["monkeys", "cats", "birds", "gasoline"],
+      answer: "birds"
     },
     {
-      question: "Commonly used data types DO NOT include:",
-      choices: ["strings", "booleans", "alerts", "numbers"],
-      answer: "alerts"
+      question: "pick 1",
+      choices: ["2", "3", "4", "5"],
+      answer: "2"
     },
     {
-      question: "Commonly used data types DO NOT include:",
-      choices: ["strings", "booleans", "alerts", "numbers"],
-      answer: "alerts"
+      question: "purple is to sky as mice is to",
+      choices: ["traps", "holes", "fur", "tails"],
+      answer: "traps"
     },
     {
-      question: "Commonly used data types DO NOT include:",
-      choices: ["strings", "booleans", "alerts", "numbers"],
-      answer: "alerts"
+      question: "question",
+      choices: ["answer", "answer", "answer", "not answer"],
+      answer: "answer"
     },
     {
-      question: "Commonly used data types DO NOT include:",
-      choices: ["strings", "booleans", "alerts", "numbers"],
-      answer: "alerts"
+      question: "what comes first",
+      choices: ["chicken", "egg",],
+      answer: "egg"
     },
     {
-      question: "Commonly used data types DO NOT include:",
-      choices: ["strings", "booleans", "alerts", "numbers"],
-      answer: "alerts"
+      question: "a zebra is a tpe of horse",
+      choices: ["false", "true",],
+      answer: "true"
     },
     {
-      question: "Commonly used data types DO NOT include:",
-      choices: ["strings", "booleans", "alerts", "numbers"],
-      answer: "alerts"
+      question: "achoo",
+      choices: ["kazoontight", "a sneeze", "a name", "bless you"],
+      answer: "a name"
     },
 ]
