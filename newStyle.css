@@ -66,6 +66,9 @@ margin-right: 14px;
 #quizCardBody{
     background-color:#4E525F;
 }
+.highlight{
+    color: whitesmoke;
+}
 .timer,.footer{
 color: whitesmoke;
 font-size: 100px;

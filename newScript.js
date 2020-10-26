@@ -45,6 +45,7 @@ $("#something").on("click",function (){
        asked.innerHTML = "";
        currentQuestionIndex = 0;
        displayHS();
+       stopwatch.style.color ="white";
 
    }
 })
@@ -77,6 +78,7 @@ function setQandA() {
     // update title with current question
     
     let questionDisplay = document.createElement("div");
+    questionDisplay.setAttribute("class","highlight");
     questionDisplay.textContent = currentQuestion.question;
     asked.appendChild(questionDisplay);
   
@@ -186,7 +188,7 @@ function saveHighscore() {
 
 function displayHS() {
   var hScb = document.getElementById("highScoreCardBody");
-  hScb.firstChild.textContent = "name-score-timeleft";
+  hScb.firstElementChild.textContent = "name-score-timeleft";
   // either get scores from localstorage or set to empty array
   var highscores = JSON.parse(window.localStorage.getItem("highscores")) || [];
 
@@ -202,7 +204,7 @@ function displayHS() {
 
     // display on page
     
-    hScb.appendChild(trTag);
+    hScb.children[0].appendChild(trTag);
   });
 }
 
