@@ -66,16 +66,24 @@ margin-right: 14px;
 #quizCardBody{
     background-color:#4E525F;
 }
-.timer{
+.timer,.footer{
 color: whitesmoke;
-font-size: 50px;
+font-size: 100px;
+font-family: 'Architects Daughter', cursive;
+    font-size: larger;
+    text-align: center;
+    text-emphasis: bold;
+    background-color: #474B56;
+    color: whitesmoke;
 }
 #timeStart{
     margin-left: 10px;
 }
 
-    
-}
+#clear{
+    justify-self: center;
+}    
+
 @media (max-width:600px){
 body{
   

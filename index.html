@@ -40,7 +40,7 @@
           Good Luck!
         </main>
       </div>
-      <div class="col-md-4">
+      <div class="col-lg-4">
         <button class="btn btn-success btn-block"id="something">
           <span class="fa fa-ok"></span> Take Quiz</button>
       </div>
@@ -49,16 +49,17 @@
       <div class="col-lg-12">
         <div class="quizcard">
             <div class="card-header" id="quizCardHeader">
-              <div class="timer"><div id="timer">60</div><button type="button" class="btn btn-success " id="timeStart">Start</button></div>
-              Question
-              
-            </div>
+              <div class="timer">
+                <button type="button" class="btn btn-success " id="timeStart">Start</button></div>
+              </div>
             <div class="card-body" id="quizCardBody">
-              <button type="button" class="btn btn-light btn-lg btn-block" id="ans1">answer 1</button><br>
-              <button type="button" class="btn btn-light btn-lg btn-block" id="ans2">answer 2</button><br>
-              <button type="button" class="btn btn-light btn-lg btn-block" id="ans3">answer 3</button><br>
-              <button type="button" class="btn btn-light btn-lg btn-block" id="ans4">answer 4</button><br>
+           
             </div>
+            <footer class = "footer mt-auto py-3">
+              <div class ="container">
+                <span class="text-muted"><div id="timer">60</div></span>
+              </div>
+            </footer>
             </div>
       </div>
     </div>
@@ -70,20 +71,10 @@
           <div class="card-body" id="highScoreCardBody">
             <table class="table">
               <thead>
-                <tr>
-                  <th scope="col">#</th>
-                  <th scope="col">Name</th>
-                  <th scope="col">Score</th>
-                  <th scope="col">Time Left</th>
-                </tr>
-              </thead>
+                <tr><button class="btn btn-warning btn-sm" id="clear">Clear High Scores</button></tr>
+              </thead><br>
               <tbody>
-                <tr>
-                  <th scope="row">1</th>
-                  <td>name</td>
-                  <td>score</td>
-                  <td>time</td>
-                </tr>
+                <tr>name-score-timeleft</tr>
               </tbody>
             </table>
           </div>
