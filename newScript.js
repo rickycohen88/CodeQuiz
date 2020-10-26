@@ -185,6 +185,8 @@ function saveHighscore() {
 }
 
 function displayHS() {
+  var hScb = document.getElementById("highScoreCardBody");
+  hScb.firstChild.textContent = "name-score-timeleft";
   // either get scores from localstorage or set to empty array
   var highscores = JSON.parse(window.localStorage.getItem("highscores")) || [];
 
@@ -199,8 +201,8 @@ function displayHS() {
     trTag.textContent = score.name + " - " + score.score + "-" + score.timeLeft;
 
     // display on page
-    var olEl = document.getElementById("highScoreCardBody");
-    olEl.appendChild(trTag);
+    
+    hScb.appendChild(trTag);
   });
 }
 
